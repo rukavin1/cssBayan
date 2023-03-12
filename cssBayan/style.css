@@ -25,6 +25,7 @@ h1 {
     align-items: center;
     font-size: 1.5rem;
     font-weight: 600;
+    transition: height .3s
 }
 
 .accordion__item {
@@ -67,6 +68,11 @@ h1 {
     display: none; 
 }
 
+.item__image:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .item__input {
     -webkit-appearance: none;
     appearance: none;
@@ -83,7 +89,6 @@ h1 {
 
 .item__input:checked ~ .item__image {
     display: block;
-    transition: 0.3s ease-out;
 }
 
 .item__input:checked ~ .item__image:after {
