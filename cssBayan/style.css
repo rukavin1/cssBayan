@@ -70,6 +70,7 @@ h1 {
 
 .item__image:hover {
     transform: scale(1.1);
+    transition: .3s ease;
     cursor: pointer;
 }
 
@@ -89,6 +90,7 @@ h1 {
 
 .item__input:checked ~ .item__image {
     display: block;
+    transition: .3s ease;
 }
 
 .item__input:checked ~ .item__image:after {
